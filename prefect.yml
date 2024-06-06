@@ -41,4 +41,7 @@ deployments:
   - <<: *common_deployment
     name: flow_with_tasks
     entrypoint: flows.py:hello_from_tasks
-
+  
+  - <<: *common_deployment
+    name: new_flow
+    entrypoint: flows.py:new_flow
