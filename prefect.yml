@@ -44,4 +44,4 @@ deployments:
   
   - <<: *common_deployment
     name: new_flow
-    entrypoint: flows.py:new_flow
+    entrypoint: flows.py:updated_flow

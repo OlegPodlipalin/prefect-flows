@@ -26,8 +26,8 @@ def hello_from_tasks():
     hello_from_task_1(logger)
     hello_from_task_2(logger)
 
-@flow(log_prints=False, name="new_flow")
-def new_flow():
+@flow(log_prints=False, name="updated_flow")
+def updated_flow():
     logger = get_run_logger()
-    logger.info("This is a new flow from logger")
-    print("This is a new flow from print")
+    logger.info("This is an updated flow from logger")
+    print("This is an updated flow from print")
