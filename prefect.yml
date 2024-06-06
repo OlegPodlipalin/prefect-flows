@@ -21,7 +21,7 @@ common_work_pool: &work_pool
       volumes:
         - "{{ $HOST_DIR_PATH }}data:{{ $PARENT_DIR_PATH }}data"
       networks:
-        - "prefect-server_worker-pool"
+        - "prefect-deploy_worker-pool"
       image_pull_policy: Always
 
 common_deployment: &common_deployment
